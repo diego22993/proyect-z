@@ -48,11 +48,14 @@ public class OrdenCompra {
     }
 
     private static void addProducto(Producto producto){
-
+        new Producto();
     }
 
     public Integer granTotal(Producto[] productos){
         Integer res = 0;
+        for (Producto dto : productos){
+            res += dto.getPrecio();
+        }
         return res;
     }
 
