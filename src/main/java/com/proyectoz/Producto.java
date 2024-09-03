@@ -36,5 +36,5 @@ public class Producto {
     public void setPrecio(Integer precio) {
         this.precio = precio;
     }
-    
+
 }
