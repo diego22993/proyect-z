@@ -7,10 +7,12 @@ public class OrdenCompra {
     private String descripcion;
     private Date fecha;
     private Cliente cliente;
-    private Producto[] productos;
+    private Producto[] productos = new Producto[4];
 
     public OrdenCompra(){}
-
+    public OrdenCompra(String descripcion) {
+        this.descripcion = descripcion;
+    }
     public OrdenCompra(Integer id, String descripcion, Date fecha) {
         this.id = id;
         this.descripcion = descripcion;
@@ -43,6 +45,15 @@ public class OrdenCompra {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    private static void addProducto(Producto producto){
+
+    }
+
+    public Integer granTotal(Producto[] productos){
+        Integer res = 0;
+        return res;
     }
 
     @Override
