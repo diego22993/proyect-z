@@ -24,6 +24,10 @@ public class ItemFactura {
         this.cantidad = cantidad;
     }
 
+    public Double calcularImporte(){
+        return (getProducto().getPrecio())*getCantidad();
+    }
+
     @Override
     public String toString() {
         return "ItemFactura{" +

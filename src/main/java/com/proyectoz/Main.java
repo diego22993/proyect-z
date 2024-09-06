@@ -40,14 +40,21 @@ public class Main {
 
 
         taxA = new Factura(c1,items[3],10,"Factura-Mercado Pago");
+        Double importeTotal = 0.0;
+
         //taxB = new Factura(c2,itemB,20,"Factura-Marketplace");
         System.out.println("\n #### Datos de la factura #### \n");
-        for (int i = 1; i < items.length; i++) {
+        for (int i = 0; i < items.length; i++) {
             System.out.println("Item NRO:"+i);
             System.out.println("Nombre: "+items[i].getProducto().getNombre());
             System.out.println("Precio: "+items[i].getProducto().getPrecio());
             System.out.println("Cantidad: "+items[i].getCantidad()+"\n");
         }
 
+        for (int i = 0; i < items.length; i++) {
+            importeTotal += items[i].calcularImporte();
+        }
+
+        System.out.println("Total Importe : $"+importeTotal);
     }
 }
