@@ -4,16 +4,9 @@ public class ItemFactura {
     private Producto producto;
     private Integer cantidad;
 
-    public ItemFactura() {
-    }
-    public ItemFactura(Producto producto) {
-        this.producto = producto;
-    }
-    public ItemFactura(Integer cantidad) {
-        this.cantidad = cantidad;
-    }
+    public ItemFactura() {}
     public ItemFactura(Producto producto, Integer cantidad) {
-        this(producto);
+        this.producto=producto;
         this.cantidad = cantidad;
     }
 

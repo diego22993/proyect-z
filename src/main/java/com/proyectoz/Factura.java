@@ -10,6 +10,12 @@ public class Factura {
     private Date fecha;
 
     public Factura(){}
+    public Factura(Cliente cliente, ItemFactura items, Integer folio, String descripcion) {
+        this.cliente = cliente;
+        this.items = items;
+        this.folio = folio;
+        this.descripcion = descripcion;
+    }
     public Factura(Cliente cliente, ItemFactura items, Integer folio, String descripcion, Date fecha) {
         this.cliente = cliente;
         this.items = items;
