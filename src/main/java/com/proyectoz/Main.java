@@ -11,19 +11,19 @@ public class Main {
         Cliente c2 = new Cliente("Jorgito soles","992305");
         Cliente c3 = new Cliente("Dario Ñañez","5607321");
 
-        Producto p1 = new Producto(001,"Taladro",350000.00);
-        Producto p2 = new Producto(002,"Pinza",5600.70);
-        Producto p3 = new Producto(003,"Soldadora",900500.00);
-        Producto p4 = new Producto(004,"Alambre",10000.99);
-
+        Producto p1 = new Producto(001,"Taladro",350.5);
+        Producto p2 = new Producto(002,"Pinza",56.70);
+        Producto p3 = new Producto(003,"Soldadora",90.5);
+        Producto p4 = new Producto(004,"Alambre",100.99);
+/*
         Producto[] productos = {
-                new Producto(001,"Taladro",350000.00),
-                new Producto(002,"Pinza",5600.70),
-                new Producto(003,"Soldadora",900500.00),
-                new Producto(004,"Alambre",10000.99)
+                new Producto(001,"Taladro",350.5),
+                new Producto(002,"Pinza",56.70),
+                new Producto(003,"Soldadora",90.5),
+                new Producto(004,"Alambre",100.99)
         };
 
-/*        for (Producto producto : productos) {
+       for (Producto producto : productos) {
             System.out.println("Valores: "+ producto.toString());
         }
 
@@ -49,16 +49,15 @@ public class Main {
             System.out.println("Nombre: "+items[i].getProducto().getNombre());
             System.out.println("Precio: "+items[i].getProducto().getPrecio());
             System.out.println("Cantidad: "+items[i].getCantidad());
-            importeTotal += items[i].calcularImporte();
+            importeTotal = items[i].calcularImporte();
             System.out.println("IMPORTE: $"+importeTotal+"\n");
         }
 
-        /*for (int i = 0; i < items.length; i++) {
+        for (int i = 0; i < items.length-1; i++) {
             importeTotal += items[i].calcularImporte();
         }
+        System.out.println("TOTAL A FACTURAR [ $"+taxA.calcularTotal()+" ]");
+        System.out.println("TOTAL A FACTURAR_2 [ $"+importeTotal+" ]");
 
-        System.out.println("Total Importe : $"+importeTotal);
-
-         */
     }
 }

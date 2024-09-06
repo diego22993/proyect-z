@@ -8,6 +8,7 @@ public class Factura {
     private Integer folio;
     private String descripcion;
     private Date fecha;
+    private Double total = 0.0;
 
     public Factura(){}
     public Factura(Cliente cliente, ItemFactura items, Integer folio, String descripcion) {
@@ -57,7 +58,8 @@ public class Factura {
     }
 
     public Double calcularTotal(){
-        return 2.2;
+        total = this.items.calcularImporte();
+        return total;
     }
 
     public String verDetalle(){
