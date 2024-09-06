@@ -48,13 +48,17 @@ public class Main {
             System.out.println("Item NRO:"+i);
             System.out.println("Nombre: "+items[i].getProducto().getNombre());
             System.out.println("Precio: "+items[i].getProducto().getPrecio());
-            System.out.println("Cantidad: "+items[i].getCantidad()+"\n");
+            System.out.println("Cantidad: "+items[i].getCantidad());
+            importeTotal += items[i].calcularImporte();
+            System.out.println("IMPORTE: $"+importeTotal+"\n");
         }
 
-        for (int i = 0; i < items.length; i++) {
+        /*for (int i = 0; i < items.length; i++) {
             importeTotal += items[i].calcularImporte();
         }
 
         System.out.println("Total Importe : $"+importeTotal);
+
+         */
     }
 }
