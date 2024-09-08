@@ -2,8 +2,9 @@ package com.proyectoz;
 
 public class Calculadora {
 
+    private Calculadora(){}
 
-    public Integer sumar(Integer... argumentos){
+    public static Integer sumar(Integer... argumentos){
         Integer total = 0;
         for (Integer argumento : argumentos) {
             total+=argumento;
@@ -11,7 +12,7 @@ public class Calculadora {
         return total;
     }
 
-    public Float sumar(Float... argumentos){
+    public static Float sumar(Float... argumentos){
         Float total = 0f;
         for (Float argumento : argumentos) {
             total+=argumento;
